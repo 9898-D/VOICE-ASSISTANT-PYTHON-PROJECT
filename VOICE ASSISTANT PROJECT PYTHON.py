@@ -284,7 +284,6 @@ if __name__ == "__main__":
             
             question=takecommand()
             app_id="YOUR APP ID" 
-            app_id="Mention your API Key"
             client = wolframalpha.Client(app_id)
             res = client.query(question)
             answer = next(res.results).text
@@ -294,7 +293,7 @@ if __name__ == "__main__":
         elif "search" in query or "play" in query:
             query=query.replace('search','') 
             query=query.replace('play','')
-            webbrowser.open(query)
+            webbrowser.open_new_tab(query)
         
                                     #
         elif "who i am" in query:
@@ -336,10 +335,10 @@ if __name__ == "__main__":
             usdt=takecommand()
             if 'yes' in usdt or 'sure' in usdt:
                 dt=datetime.datetime.now().strftime("%H:%M:%S")
-                file.write(note)
-                file.write(" -- ") 
                 file.write(dt)
+                file.write(" :-- ") 
                 file.write("\n")
+                file.write(note)
             else:
                 file.write(note)
         
@@ -349,7 +348,7 @@ if __name__ == "__main__":
             file=open('edith.txt','r')
             rd=file.readlines()
             print(rd)
-            speak(f"{rd}")
+            speak(rd)
 
                                 # showing Weather
         elif "show weather" in query or "today weather" in query:
@@ -437,7 +436,7 @@ if __name__ == "__main__":
             speak(f"Power plugged in {battery.power_plugged}")
             speak(f"Battery left  {getBattery(battery.secsleft)}")
         
-        
+    
         
             
         
