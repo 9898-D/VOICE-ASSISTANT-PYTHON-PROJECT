@@ -104,6 +104,7 @@ def takecommand():
 
 # CREATE sendEmail function to send a mail through SMTP server
 def sendEmail(to,content):
+    
     """
     [summary: sendEmail THROUGH A SMTP SERVER using Google Mail API]
 
@@ -144,7 +145,7 @@ def getBattery(seconds):
     return "%d:%02d:%02d" % (hours, minutes, seconds)
   
     
-#       -----------------------------------------------------------  LOGIC  PART  --------------------------------------------------
+#    -----------------------------------------------------------  LOGIC  PART  --------------------------------------------------
 
 if __name__ == "__main__":
     clean=lambda:os.system('cls')
@@ -275,7 +276,7 @@ if __name__ == "__main__":
         elif 'who made you' in query or "who created you" in query:
             speak('i have been created by Dhruv')
         
-                                    # 
+                                    # JOKES FOR YOU
         elif "joke" in query:
             speak(pyjokes.get_joke())
             
@@ -435,8 +436,30 @@ if __name__ == "__main__":
             speak(f"Battery percentage str{battery.percent}")
             speak(f"Power plugged in {battery.power_plugged}")
             speak(f"Battery left  {getBattery(battery.secsleft)}")
-        
+
+                                #
+        elif 'play video' in query:
+            
+            speak("which song would you like to play")
+            tk=takecommand()
+            #tkd=tk.replace('play','')
+            kit.playonyt(tk)
+
+                                #
+        elif 'search' in query:
+            
+            speak("what we do search")
+            s=takecommand()
+            sk=s.replace('search','')
+            kit.search(sk)
+
     
+    # YOU CAN ALSO ADD MORE CONDITIONS AND FUNCTION TO MAKE MORE ENHANCED VOICE ASSISTANT
+    
+    # I ALSO TRY TO ADD MORE CONDITIONS AND FUNCTION TO MAKE PROJECT MORE DEEPER 
+    
+
+# ---------------------------------------------------------------- END OF PROJECT ----------------------------------------------------------------
         
             
         
