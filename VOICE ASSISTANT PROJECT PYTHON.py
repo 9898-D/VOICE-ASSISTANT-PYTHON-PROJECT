@@ -7,24 +7,14 @@ import wolframalpha                   # It is used to compute expert-level answe
 import wikipedia                      # Search wikipedia infomation
 import webbrowser                     # these module used for a open a webbrowser tab        
 import datetime                       # show datetime 
-import requests                       # Requests is used for making GET and POST requests.                     
-import subprocess                     # The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.
-import json                           # lightweight data interchange format inspired by JavaScript object literal syntax
-import random                         # choose a randomly number we can also implement more tasks
+import requests                       # Requests is used for making GET and POST requests.                                            # choose a randomly number we can also implement more tasks
 import os                             # The OS module in Python provides functions for interacting with the operating system
 import pyjokes                        # One line jokes for programmers
-import smtplib                        # The smtplib module defines an SMTP client session object that can be used to send mail to any Internet machine with an SMTP
-import time                           # This module provides various time-related functions. For related functionality, see also the datetime and calendar modules.
+import smtplib                        # The smtplib module defines an SMTP client session object that can be used to send mail to any Internet machine with an SMTP                         # This module provides various time-related functions. For related functionality, see also the datetime and calendar modules.
 import pywhatkit as kit
 import psutil                         # psutil is a cross-platform library for retrieving information on running processes and system utilization(CPU, memory, disks, networks, sensors) in Python
 
-from clint.textui import progress     # Clint is a module filled with a set of awesome tools for developing commandline application
 from ecapture import ecapture as ec   # To capture images from your Camera.
-from bs4 import BeautifulSoup         # Beautiful Soup is a library that makes it easy to scrape information from web pages
-import win32com.client as wincl       # Python extensions for Microsoft Windows Provides access to much of the Win32 API, the ability to create and use COM objects, and the Pythonwin environment
-from urllib.request import urlopen    #  It is used to fetch URLs (Uniform Resource Locators). It uses the urlopen function and is able to fetch URLs using a variety of different protocols.
-
-
 
 # CREATE A LOGIC OF SPEACK MODULE --pyttsx3
 
